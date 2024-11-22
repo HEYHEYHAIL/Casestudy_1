@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="contact.css">
+  </head>
+ 
+  <body>
+    <div class="glass-effect">
+     <section id="contact-1388">
+      <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get in Touch</h2>
+            <p class="cs-text">
+                Feel free to reach out! Whether you have questions, feedback, or just want to connect, I’d love to hear from you. Simply fill out the form below, and I’ll get back to you as soon as possible. Let’s stay in touch
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/logo/telephone.png" alt="phone icon" class="cs-icon" width="40" height="40">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:888-4565-789
+                        " class="cs-link">+93 945 6072 140.
+                        </a>
+                    </div>
+                </li>
+                
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/logo/gmail.png" alt="address icon" class="cs-icon" width="40" height="40">
+                        
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>shymonvalmadrid@gmail.com
+                    </div>
+                </li>
+                
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/logo/placeholder.png" alt="address icon" class="cs-icon" width="40" height="40">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Address</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post" onsubmit="return handleSubmit(event)">
+            <h3 class="cs-h3">Make Appointment</h3>
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label cs-email">
+                Email
+                <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-phone">
+                Phone
+                <input class="cs-input" required type="number" id="phone-1388" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Message
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1388" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            <p id="succes-message" class="hidden">Your message is successfully sent!</p>
+        </form>
+    </div>
+       
+  <script>
+  function handleSubmit(event) {
+    event.preventDefault(); 
+    document.getElementById("success-message").style.display = "block";
+    document.getElementById("cs-form-1388").reset(); 
+  }
+</script>
+       </section>
+    </div>
+  </body>
+</html>
